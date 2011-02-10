@@ -1,6 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),beagleboard)
+ifeq ($(TARGET_DEVICE),pandaboard)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES:= aplay.c alsa_pcm.c alsa_mixer.c
