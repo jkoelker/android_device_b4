@@ -1,0 +1,12 @@
+on boot
+    # create dhcpcd dir
+    mkdir /data/misc/dhcp 0770 dhcp dhcp
+    chmod 0770 /data/misc/dhcp
+
+service omap4-setup /system/etc/init.omap4.sh
+    oneshot
+
+service faketsd /system/bin/faketsd
+    user bluetooth
+    group bluetooth
+    oneshot
