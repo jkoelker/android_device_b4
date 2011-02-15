@@ -1,5 +1,7 @@
 # The pandaboard product that is specialized for pandaboard.
 
+include $(LOCAL_PATH)/ZeroXBenchmark.mk
+
 PRODUCT_PACKAGES := \
     ZeroXBenchmark \
     libmicro \
@@ -22,7 +24,8 @@ PRODUCT_PACKAGES := \
     Sync \
     Updater \
     CalendarProvider \
-    SyncProvider
+    SyncProvider \
+    $(ZEROXBENCHMARK_NATIVE_APPS)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 
