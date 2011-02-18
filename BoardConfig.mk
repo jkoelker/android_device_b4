@@ -19,7 +19,7 @@ TARGET_CPU_ABI2 := armeabi
 
 # Enable NEON feature
 TARGET_ARCH_VARIANT := armv7-a-neon
-ARCH_ARM_HAVE_TLS_REGISTER := false
+ARCH_ARM_HAVE_TLS_REGISTER := true
 
 EXTRA_PACKAGE_MANAGEMENT := false
 ALLOW_LGPL := true
