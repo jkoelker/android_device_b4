@@ -22,7 +22,7 @@ include $(BUILD_KEY_CHAR_MAP)
 
 file := $(TARGET_ROOT_OUT)/init.rc
 ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/init.rc | $(ACP)
+$(file) : $(LOCAL_PATH)/../common/init.rc | $(ACP)
 	$(transform-prebuilt-to-target)
 
 file := $(TARGET_ROOT_OUT)/init.omap4.rc
