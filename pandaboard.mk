@@ -28,6 +28,7 @@ PRODUCT_PACKAGES := \
     $(ZEROXBENCHMARK_NATIVE_APPS)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
+$(call inherit-product, device/linaro/pandaboard/device.mk)
 
 # Overrides
 PRODUCT_BRAND := pandaboard
