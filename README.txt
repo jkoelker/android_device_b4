@@ -1,11 +1,11 @@
-Just copy of the beagle product to make the base for the panda product. Should probably inherit/include from the beagle product instead.
+Summary: Linaro Evaluation Build for Android
 
- /Patrik
+Author: Linaro Limited
 
-Author: 0xlab
+Description:
+  In order to ensure that Software Components developed and improved work
+  well and really matter in a production like environment, Linaro Platform
+  Releases introduced a concept called "Evaluation Builds".
 
-The "beagleboard" product defines a target for the TI OMAP3 based
-Beagle board without a kernel or bootloader.
-
-It depends on ALSA sound as well as a number of OMAP3 specific
-hardware changes.
+  Evaluation Builds are images that can be installed on high volume member
+  boards supported by Linaro Platform and Landing Teams.
