@@ -35,11 +35,6 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/init.omap4.sh | $(ACP)
 	$(transform-prebuilt-to-target)
 
-file := $(TARGET_ROOT_OUT)/system/etc/vold.conf
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/vold.conf | $(ACP)
-	$(transform-prebuilt-to-target)
-
 file := $(TARGET_ROOT_OUT)/initlogo.rle
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/initlogo.rle | $(ACP)
