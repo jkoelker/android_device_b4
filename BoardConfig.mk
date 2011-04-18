@@ -4,8 +4,14 @@
 #
 
 TARGET_BOARD_PLATFORM := omap4
-TARGET_NO_BOOTLOADER := true
-TARGET_NO_KERNEL := true
+TARGET_NO_BOOTLOADER := true # Uses u-boot instead 
+TARGET_NO_KERNEL := false
+KERNEL_CONFIG := android_omap4_defconfig
+TARGET_USE_UBOOT := true
+UBOOT_CONFIG := omap4_panda_config
+TARGET_USE_XLOADER := true
+XLOADER_BINARY := device/linaro/pandaboard/MLO
+TARGET_NO_RECOVERY := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_PROVIDES_INIT_RC := true
 BOARD_USES_GENERIC_AUDIO := false
