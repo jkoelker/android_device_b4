@@ -30,7 +30,7 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/init.omap4.rc | $(ACP)
 	$(transform-prebuilt-to-target)
 
-file := $(TARGET_ROOT_OUT)/system/etc/init.omap4.sh
+file := $(PRODUCT_OUT)/system/etc/init.omap4.sh
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/init.omap4.sh | $(ACP)
 	$(transform-prebuilt-to-target)
