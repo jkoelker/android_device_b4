@@ -17,6 +17,7 @@ TARGET_PROVIDES_INIT_RC := true
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := true
 OMAP_ENHANCEMENT := true
+HARDWARE_OMX := true
 USE_CAMERA_STUB := true
 
 BOARD_HAVE_BLUETOOTH := false
@@ -24,6 +25,20 @@ BOARD_HAVE_BLUETOOTH_BCM := false
 
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+
+ifdef HARDWARE_OMX
+OMX_VENDOR := ti
+OMX_VENDOR_INCLUDES := \
+   hardware/ti/omx/system/src/openmax_il/omx_core/inc \
+   hardware/ti/omx/image/src/openmax_il/jpeg_enc/inc
+OMX_VENDOR_WRAPPER := TI_OMX_Wrapper
+BOARD_OPENCORE_LIBRARIES := libOMX_Core
+BOARD_OPENCORE_FLAGS := -DHARDWARE_OMX=1
+endif
+
+ifdef OMAP_ENHANCEMENT
+COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT -DTARGET_OMAP4
+endif
 
 # Enable NEON feature
 TARGET_ARCH_VARIANT := armv7-a-neon
