@@ -20,6 +20,12 @@ LOCAL_SRC_FILES := Logitech_Logitech_USB_Keyboard.kcm
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_KEY_CHAR_MAP)
 
+
+file := $(TARGET_ROOT_OUT)/system/lib/egl/egl.cfg
+ALL_PREBUILT += $(file)
+$(file) : $(LOCAL_PATH)/egl.cfg | $(ACP)
+        $(transform-prebuilt-to-target)
+
 file := $(TARGET_ROOT_OUT)/init.rc
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/../common/init.rc | $(ACP)
