@@ -40,5 +40,3 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/initlogo.rle | $(ACP)
 	$(transform-prebuilt-to-target)
 
-# PowerVR SGX binaries
-include device/linaro/pandaboard/prebuilt/graphics/sgx.mk
