@@ -13,4 +13,10 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES := \
-    device/linaro/beagleboard/vold.fstab:system/etc/vold.fstab
+    device/linaro/beagleboard/vold.fstab:system/etc/vold.fstab \
+    device/linaro/pandaboard/egl.cfg:system/vendor/lib/egl/egl.cfg
+
+PRODUCT_COPY_FILES += \
+        device/linaro/pandaboard/init.omap4430.rc:root/init.omap4430.rc \
+        device/linaro/pandaboard/ueventd.omap4430.rc:root/ueventd.omap4430.rc
+
