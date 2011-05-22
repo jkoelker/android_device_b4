@@ -50,4 +50,5 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
 # bootargs
-BOARD_KERNEL_CMDLINE := omapfb.vram=0:24M videoout=omap24xxvout omap_vout.vid1_static_vrfb_alloc=y
+BOARD_KERNEL_CMDLINE := omapdss.def_disp=hdmi consoleblank=0
+
