@@ -20,3 +20,5 @@ PRODUCT_COPY_FILES += \
         device/linaro/pandaboard/init.omap4430.rc:root/init.omap4430.rc \
         device/linaro/pandaboard/ueventd.omap4430.rc:root/ueventd.omap4430.rc
 
+PRODUCT_COPY_FILES += \
+        device/ti/proprietary-open/graphics/omap4/license.txt:root/license.txt
