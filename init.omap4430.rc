@@ -101,6 +101,13 @@ on boot
     chown system system /sys/class/graphics/fb1/overlays
     chmod 0666 /dev/pvrsrvkm
 
+    insmod /system/lib/modules/st_drv.ko
+    insmod /system/lib/modules/bluetooth.ko
+    insmod /system/lib/modules/bnep.ko
+    insmod /system/lib/modules/hci_uart.ko
+    insmod /system/lib/modules/rfcomm.ko
+    insmod /system/lib/modules/btwilink.ko
+
 # Initialize the SGX driver
 service pvrsrvinit /system/bin/pvrsrvinit
     user root
