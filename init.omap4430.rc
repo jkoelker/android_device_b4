@@ -108,6 +108,9 @@ on boot
     insmod /system/lib/modules/rfcomm.ko
     insmod /system/lib/modules/btwilink.ko
 
+    insmod /system/lib/modules/wl12xx.ko
+    insmod /system/lib/modules/wl12xx_sdio.ko
+
 # Initialize the SGX driver
 service pvrsrvinit /system/bin/pvrsrvinit
     user root
