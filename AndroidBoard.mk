@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
-PANDA_PATH := $(call my-dir)../../linaro/pandaboard
+PANDA_PATH := $(call my-dir)/../../linaro/pandaboard
 
 file := $(TARGET_OUT_KEYLAYOUT)/gpio-keys.kl
 ALL_PREBUILT += $(file)
