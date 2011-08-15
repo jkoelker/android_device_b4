@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/pandaboard-b4.mk
+	$(LOCAL_DIR)/b4.mk

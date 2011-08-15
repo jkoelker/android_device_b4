@@ -1,1 +1,1 @@
-add_lunch_combo pandaboard-b4-eng
+add_lunch_combo b4-eng
