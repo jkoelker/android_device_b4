@@ -1,10 +1,10 @@
 # config.mk
-# 
+#
 # Product-specific compile-time definitions.
 #
 
 TARGET_BOARD_PLATFORM := omap4
-TARGET_NO_BOOTLOADER := true # Uses u-boot instead 
+TARGET_NO_BOOTLOADER := true # Uses u-boot instead
 TARGET_NO_KERNEL := false
 KERNEL_CONFIG := android_omap4_defconfig_b4
 TARGET_USE_UBOOT := true
