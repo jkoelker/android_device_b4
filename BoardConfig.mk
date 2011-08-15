@@ -6,7 +6,7 @@
 TARGET_BOARD_PLATFORM := omap4
 TARGET_NO_BOOTLOADER := true # Uses u-boot instead
 TARGET_NO_KERNEL := false
-KERNEL_CONFIG := android_omap4_defconfig_b4
+KERNEL_CONFIG := android_omap4_b4_defconfig
 TARGET_USE_UBOOT := true
 UBOOT_CONFIG := omap4_panda_config
 TARGET_USE_XLOADER := true
