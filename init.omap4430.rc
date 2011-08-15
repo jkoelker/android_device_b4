@@ -111,6 +111,9 @@ on boot
     insmod /system/modules/wl12xx.ko
     insmod /system/modules/wl12xx_sdio.ko
 
+    insmod /system/modules/hmc6352.ko
+    insmod /system/modules/adxl345.ko
+
 # Initialize the SGX driver
 service pvrsrvinit /system/bin/pvrsrvinit
     user root
