@@ -6,7 +6,7 @@
 TARGET_BOARD_PLATFORM := omap4
 TARGET_NO_BOOTLOADER := true # Uses u-boot instead 
 TARGET_NO_KERNEL := false
-KERNEL_CONFIG := android_omap4_defconfig
+KERNEL_CONFIG := android_omap4_defconfig_b4
 TARGET_USE_UBOOT := true
 UBOOT_CONFIG := omap4_panda_config
 TARGET_USE_XLOADER := true
@@ -20,7 +20,7 @@ OMAP_ENHANCEMENT := true
 HARDWARE_OMX := false
 USE_CAMERA_STUB := true
 
-BOARD_HAVE_BLUETOOTH := false
+BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := false
 
 TARGET_CPU_ABI := armeabi-v7a
