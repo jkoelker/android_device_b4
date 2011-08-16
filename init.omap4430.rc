@@ -123,3 +123,8 @@ service faketsd /system/bin/faketsd
     user bluetooth
     group bluetooth
     oneshot
+
+# Sleeping causes a crash, lets disable for now
+svc power stayon true
+echo test > /sys/power/wake_lock
+
